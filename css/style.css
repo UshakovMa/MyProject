@@ -349,8 +349,8 @@ li:active{
 
   .news>.LeftCol{
     position: relative;
-    width: 700px;
-    right: 250px;
+    width: 564px;
+    right: 292px;
   }
 
   .LeftCol{
@@ -380,25 +380,9 @@ li:active{
 
   .news>.LeftCol{
     position: relative;
-    width: 425px;
-    right: 230px;
+    width: 430px;
+    right: 290px;
   }
-
-}
-
-@media (max-width: 650px) {
-  .main>.LeftCol{
-    position: absolute;
-    width: 100%;
-    right: 20px;
-    text-align: center;
-  }
-
-  .slider{
-    width: 93%;
-    left: 40px;
-  }
-
 
 }
 
