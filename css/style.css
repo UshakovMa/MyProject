@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Russo+One');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  font-family: "RussoOne", sans-serif;
+}
+
+a{
+  color: #0078D7;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover{
+  color: #666;
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  height: 33px;
+  background-color: #0078D7;
+  margin-bottom: 10px;
+}
+
+div{
+  float: left;
+  width: 100%;
+}
+
+.LeftCol{
+  margin-left: 50px;
+  width: 400px;
+  background-color: #fff;
+  height: 500px;
+}
+
+.LeftCol>h3{
+  font-weight: 100;
+  font-size: 2em;
+}
+
+.LeftCol>.ava>img{
+  width: 200px;
+  border-radius: 50%;
+}
+
+.LeftCol>.info>div>h3{
+  font-size: 2em;
+}
+
+.LeftCol>.info>div>h4{
+  font-size: 1.2em;
+  padding-top: 10px;
+  color:#999;
+}
+
+.LeftCol>.instruction>h5{
+  font-weight: 100;
+  padding-top: 30px;
+  width: 400px;
+}
+
+
+.RightCol{
+  width:350px;
+  height: 500px;
+  background-color: #fff;
+}
+
+.RightCol>h3{
+  font-weight: 100;
+  font-size: 2em;
+}
+
+.RightCol>.set>.btn>i{
+  font-size: 1.5em;
+
+}
+
+.RightCol>.set>.btn{
+  width: 95%;
+  height: 40px;
+  padding-top: 10px;
+  padding-left: 5%;
+  background-color: #fff;
+  font-size: 1.2em;
+  -webkit-user-select:none;
+  cursor: pointer;
+}
+
+.RightCol>.set>.btn:hover{
+  background-color: #E6E6E6;
+}
+
+.RightCol>.set>.btn:active{
+background-color: #CCCCCC;
+font-size: 1.1em;
+color:#0078D7;
+}
+
+.news>.LeftCol{
+  width: 1000px;
+}
+
+.main>.LeftCol{
+  width: 850px;
+  text-align: center;
+}
+
+b{
+  color: #0078D7;
+}
+
+.main>.LeftCol>h3{
+  margin-top: 20px;
+}
+
+.menu{
+  width: 250px;
+  height:500px;
+  background-color:#fff;
+}
+.content{
+  width: calc(100% - 250px);
+  background-color: #fff;
+  height:500px;
+}
+
+.block{
+  max-width: 230px;
+  height: 250px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin-top: 70px;
+  margin-left: 50px;
+}
+
+.block>img{
+  width: 230px;
+  height: 150px;
+  border-radius: 5px 5px 0 0;
+}
+
+li{
+  width: 100%;
+  height: 40px;
+  font-size: 1.2em;
+  padding-top: 15px;
+  padding-left: 10px;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+li:hover{
+  background-color: #E6E6E6;
+}
+
+li:active{
+  background-color: #CCCCCC;
+  font-size: 1.1em;
+  color:#0078D7;
+}
+
+
+.slider {
+ z-index: 9;
+ width: 700px;
+ height: 290px;
+ overflow: hidden;
+ margin: 0 0 7px;
+ position: relative;
+ top:50px;
+ border-radius: 10px;
+ left:100px;
+ }
+ .slider ul,
+ .slider li {
+ padding: 0;
+ margin: 0;
+ list-style-type: none;
+ }
+ .slider ul {
+ width: 9999px;
+ }
+ .slider ul li {
+ list-style-type: none;
+ float: left;
+ width: 700px;
+ height: 290px;
+ }
+ .slider .nav {
+ position: absolute;
+ left: 15px;
+ bottom: 12px;
+ }
+ .slider .nav span {
+ opacity: 0.9;
+ background: #fff;
+ margin: 0 8px 0 0;
+ width: 16px;
+ height: 16px;
+ border-radius: 8px;
+ cursor: pointer;
+ overflow: hidden;
+ display: block;
+ float: left;
+ box-shadow: 0 1px 2px #000;
+ }
+ .slider .nav span.on {
+ background: #0078D7;
+ }
+
+ .chat{
+  position: relative;
+  width: 900px;
+  height: 500px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid silver;
+  box-shadow: 2px #000;
+ }
+
+ .chat_header{
+   width: 100%;
+   height: 33px;
+   background-color: #0078D7;
+   border-radius: 5px 5px 0 0;
+ }
+
+ .chat>input{
+    position: relative;
+    border: solid 2px #7A7A7A;
+    padding-left: 15px;
+    width: 600px;
+    height:35px;
+    outline: none;
+    top: 420px;
+ }
+
+ .chat>input:hover{
+   border: solid 2px #000000;
+ }
+
+ .chat>input:focus{
+  border: solid 2px #0078D7;
+ }
+
+ .chat>button{
+   position: relative;
+   width: 50px;
+   height: 35px;
+   top: 420px;
+   margin-left: 20px;
+   font-size: 1.2em;
+   border: 1px solid #0078D7;
+   border-radius: 3px;
+   background-color: #0078D7;
+   color: #fff;
+   outline: none;
+   cursor: pointer;
+ }
+
+  .chat>button:hover{
+    font-size: 1.15em;
+  }
+
+  .chat>button:active{
+    top: 421px;
+  }
+
+@media (min-width: 1200px) {
+  .news>.LeftCol{
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main>.LeftCol{
+    width: 650px;
+    text-align: center;
+  }
+
+  .slider{
+    width: 600px;
+    left: 75px;
+  }
+
+  .news>.LeftCol{
+    width: 90%;
+  }
+
+  .RightCol{
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main>.LeftCol{
+    width: 450px;
+    text-align: center;
+  }
+
+  .slider{
+    width: 450px;
+    left: 1px;
+  }
+
+  .news>.LeftCol{
+    width: 90%;
+  }
+
+  .news>.LeftCol>.block{
+    width: 180px;
+    height: 230px;
+    font-size: 0.8em;
+  }
+   .news>.LeftCol>.block>img{
+     width: 180px;
+   }
+
+   .RightCol{
+     margin-left: 50px;
+   }
+}
+
+@media (max-width: 767px) {
+  .menu{
+    visibility: hidden;
+  }
+
+  .main>.LeftCol{
+    position: absolute;
+    width: 100%;
+    right: 80px;
+    text-align: center;
+  }
+
+  .slider{
+    width: 85%;
+    left: 135px;
+  }
+
+  .news>.LeftCol{
+    position: relative;
+    width: 700px;
+    right: 250px;
+  }
+
+  .LeftCol{
+    position: relative;
+    right: 250px;
+  }
+  .RightCol{
+    position: absolute;
+    left: 460px;
+    width: 280px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .main>.LeftCol{
+    position: absolute;
+    width: 100%;
+    right: 20px;
+    text-align: center;
+  }
+
+  .slider{
+    width: 85%;
+    left: 10px;
+  }
+
+  .news>.LeftCol{
+    position: relative;
+    width: 425px;
+    right: 230px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .main>.LeftCol{
+    position: absolute;
+    width: 100%;
+    right: 20px;
+    text-align: center;
+  }
+
+  .slider{
+    width: 93%;
+    left: 40px;
+  }
+
+  .RightCol{
+    width: 280px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .main>.LeftCol{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main>.LeftCol>h3{
+    margin-left: 20px;
+  }
+
+  .slider{
+    width: 93%;
+    left: 30px;
+  }
+
+  .news>.LeftCol{
+    position: relative;
+    width: 300px;
+    right: 295px;
+  }
+}

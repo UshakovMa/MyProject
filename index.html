@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header></header>
+ <div class="menu">
+   <ul>
+     <li><i class="fa fa-vk" aria-hidden="true"></i>&nbsp;&nbsp;Войти</li>
+     <li><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Главная</li>
+     <li><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;&nbsp;Новости</li>
+     <li><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;&nbsp;Личный кабинет</li>
+     <li><i class="fa fa-comments-o" aria-hidden="true"></i>&nbsp;&nbsp;Чат</li>
+   </ul>
+ </div>
+ <div class="content">
+   <div class = "main">
+   <div class="LeftCol">
+     <h3>Автостатус для <b>ВКОНТАКТЕ</b></h3>
+     <script type="text/javascript">
+        $(document).ready(function() {
+         $(".slider").each(function () { // обрабатываем каждый слайдер
+          var obj = $(this);
+          $(obj).append("<div class='nav'></div>");
+          $(obj).find("li").each(function () {
+           $(obj).find(".nav").append("<span rel='"+$(this).index()+"'></span>"); // добавляем блок навигации
+           $(this).addClass("slider"+$(this).index());
+          });
+          $(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
+         });
+        });
+        function sliderJS (obj, sl) { // slider function
+         var ul = $(sl).find("ul"); // находим блок
+         var bl = $(sl).find("li.slider"+obj); // находим любой из элементов блока
+         var step = $(bl).width(); // ширина объекта
+         $(ul).animate({marginLeft: "-"+step*obj}, 500); // 500 это скорость перемотки
+        }
+        $(document).on("click", ".slider .nav span", function() { // slider click navigate
+         var sl = $(this).closest(".slider"); // находим, в каком блоке был клик
+         $(sl).find("span").removeClass("on"); // убираем активный элемент
+         $(this).addClass("on"); // делаем активным текущий
+         var obj = $(this).attr("rel"); // узнаем его номер
+         sliderJS(obj, sl); // слайдим
+         return false;
+        });
+  </script>
+     <div class="slider">
+     	<ul>
+     		<li><img src="i/1.jpg" alt=""></li>
+     		<li><img src="i/2.jpg" alt=""></li>
+     		<li><img src="i/3.jpg" alt=""></li>
+     		<li><img src="i/4.jpg" alt=""></li>
+     		<li><img src="i/5.jpg" alt=""></li>
+     	</ul>
+     </div>
+   </div>
+ </div>
+ </div>
+</body>
