@@ -217,63 +217,55 @@ li:active{
  background: #0078D7;
  }
 
- .chat{
-  position: relative;
-  width: 900px;
-  height: 500px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  border: 1px solid silver;
-  box-shadow: 2px #000;
+
+ .slct {
+ 	display: block;
+ 	border-radius: 5px;
+ 	border: 1px solid #cecece;
+ 	background-color: #F6F6f6;
+ 	width: 285px;
+ 	padding: 4px 15px 4px 10px;
+ 	color: #444;
+ 	background-position: 290px -145px;
+
+ 	/*
+ 		Супер финт обрезаем текст
+ 		чтобы не вылезал за рамку
+ 	*/
+ 	overflow: hidden;
+ 	white-space:nowrap;
+ 	text-overflow: ellipsis;
+ 	-o-text-overflow: ellipsis;
+
+ }
+ .slct.active {
+ 	border-radius: 5px 5px 0 0;
+ 	border-bottom: none;
+ }
+ .drop {
+ 	margin: 0;
+ 	padding: 0;
+ 	width: 310px;
+ 	border: 1px solid #cecece;
+ 	border-top: none;
+ 	display: none;
+ 	position: absolute;
+ 	background: #fff;
+ }
+ .drop li {
+ 	list-style: none;
+ 	border-top: 1px dotted #e8e8e8;
+ 	cursor: pointer;
+ 	display: block;
+ 	color: #444;
+ 	padding: 4px -1px 4px 25px;
+ 	background-position: 10px -119px;
+ }
+ .drop li:hover {
+ 	background-color: #e8e8e8;
+ 	color: #222;
  }
 
- .chat_header{
-   width: 100%;
-   height: 33px;
-   background-color: #0078D7;
-   border-radius: 5px 5px 0 0;
- }
-
- .chat>input{
-    position: relative;
-    border: solid 2px #7A7A7A;
-    padding-left: 15px;
-    width: 600px;
-    height:35px;
-    outline: none;
-    top: 420px;
- }
-
- .chat>input:hover{
-   border: solid 2px #000000;
- }
-
- .chat>input:focus{
-  border: solid 2px #0078D7;
- }
-
- .chat>button{
-   position: relative;
-   width: 50px;
-   height: 35px;
-   top: 420px;
-   margin-left: 20px;
-   font-size: 1.2em;
-   border: 1px solid #0078D7;
-   border-radius: 3px;
-   background-color: #0078D7;
-   color: #fff;
-   outline: none;
-   cursor: pointer;
- }
-
-  .chat>button:hover{
-    font-size: 1.15em;
-  }
-
-  .chat>button:active{
-    top: 421px;
-  }
 
 @media (min-width: 1200px) {
   .news>.LeftCol{
