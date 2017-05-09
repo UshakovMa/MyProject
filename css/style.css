@@ -357,11 +357,11 @@ li:active{
     position: relative;
     right: 250px;
   }
+
   .RightCol{
-    position: absolute;
-    left: 460px;
-    width: 280px;
-    height: auto;
+    position: relative;
+    width: 340px;
+    right: 200px;
   }
 }
 
@@ -399,9 +399,7 @@ li:active{
     left: 40px;
   }
 
-  .RightCol{
-    width: 280px;
-  }
+
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
@@ -425,4 +423,19 @@ li:active{
     width: 300px;
     right: 295px;
   }
+
+  .LeftCol{
+    right: 290px;
+    width: 305px;
+  }
+
+  .LeftCol>.instruction>h5{
+    width: 100%;
+  }
+
+  .RightCol{
+    right: 245px;
+    width: 300px;
+  }
+
 }
