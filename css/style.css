@@ -29,6 +29,22 @@ header{
   margin-bottom: 10px;
 }
 
+header>img{
+  width: 31px;
+  float: right;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 1px solid green;
+  background-color: #fff;
+}
+
+header>h4{
+  float: right;
+  margin-right: 40px;
+  padding-top: 7px;
+  color: #fff;
+}
+
 div{
   float: left;
   width: 100%;
@@ -310,8 +326,8 @@ li:active{
 
   .news>.LeftCol{
     position: relative;
-    width: 564px;
-    right: 292px;
+    width: calc(100% - 50px);
+    margin-left: 0;
   }
 
   .RightCol{
@@ -334,10 +350,13 @@ li:active{
     left: 10px;
   }
 
+  li{
+    width: 90%;
+  }
+
   .news>.LeftCol{
     position: relative;
-    width: 430px;
-    right: 290px;
+    width: calc(100% - 50px);
   }
 
 }
@@ -360,13 +379,12 @@ li:active{
 
   .news>.LeftCol{
     position: relative;
-    width: 300px;
-    right: 295px;
+    width: calc(100% - 20px);
   }
 
   .LeftCol{
-    right: 290px;
-    width: 305px;
+    width: 100%;
+    margin-left: 0px;
   }
 
   .LeftCol>.instruction>h5{
