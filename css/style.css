@@ -149,7 +149,7 @@ b{
 }
 
 li{
-  width: 100%;
+  width: 98%;
   height: 40px;
   font-size: 1.2em;
   padding-top: 15px;
@@ -283,17 +283,22 @@ li:active{
 }
 
 @media (max-width: 767px) {
-  .menu{
-    display: none;
+  .menu {
+    width: 100%;
+    height: auto;
+  }
+  .main>.LeftCol{
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
   }
 
-  .main>.LeftCol{
-    position: absolute;
-    width: 100%;
-    right: 80px;
+  li{
     text-align: center;
   }
-
+  .content{
+    width: 100%;
+  }
   .menu-icon{
     display: block;
   }
@@ -307,11 +312,6 @@ li:active{
     position: relative;
     width: 564px;
     right: 292px;
-  }
-
-  .LeftCol{
-    position: relative;
-    right: 250px;
   }
 
   .RightCol{
