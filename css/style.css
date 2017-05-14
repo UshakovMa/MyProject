@@ -30,11 +30,11 @@ header{
 }
 
 header>img{
-  width: 31px;
+  width: 30px;
   float: right;
   margin-right: 10px;
   border-radius: 50%;
-  border: 1px solid green;
+  border: 2px solid green;
   background-color: #fff;
 }
 
