@@ -95,12 +95,12 @@ div{
   font-size: 2em;
 }
 
-.RightCol>.set>.btn>i{
+.RightCol>.set>.btn1>i, .RightCol>.set>.btn2>i, .RightCol>.set>.btn3>i{
   font-size: 1.5em;
 
 }
 
-.RightCol>.set>.btn{
+.RightCol>.set>.btn1, .RightCol>.set>.btn2, .RightCol>.set>.btn3{
   width: 95%;
   height: 40px;
   padding-top: 10px;
@@ -111,11 +111,54 @@ div{
   cursor: pointer;
 }
 
-.RightCol>.set>.btn:hover{
+.RightCol>.set>.btn1:hover, .RightCol>.set>.btn2:hover, .RightCol>.set>.btn3:hover{
   background-color: #E6E6E6;
 }
 
-.RightCol>.set>.btn:active{
+.RightCol>.set>#open_s1, .RightCol>.set>#open_s2, .RightCol>.set>#open_s3{
+  width: calc(100% - 13px);
+  height: 36px;
+  background: transparent;
+  padding-left: 10px;
+  padding-top: 7px;
+  display: none;
+}
+.RightCol>.set>#open_s1>input, .RightCol>.set>#open_s2>input, .RightCol>.set>#open_s3>input{
+  height: 25px;
+  width: 190px;
+  outline: none;
+  border: 2px solid #999999;
+  padding-left: 5px;
+}
+.RightCol>.set>#open_s1>input:hover, .RightCol>.set>#open_s2>input:hover, .RightCol>.set>#open_s3>input:hover{
+  border: 2px solid #555;
+}
+.RightCol>.set>#open_s1>input:focus, .RightCol>.set>#open_s2>input:focus, .RightCol>.set>#open_s3>input:focus{
+  border: 2px solid #0078D7;
+}
+
+.RightCol>.set>#open_s1>button, .RightCol>.set>#open_s2>button, .RightCol>.set>#open_s3>button{
+  height: 28px;
+  font-size: 15px;
+  margin-left: 5px;
+  background-color: #CCCCCC;
+  border: 2px solid #CCCCCC;
+  padding: 1px;
+  outline: none;
+}
+
+.RightCol>.set>#open_s1>button:hover, .RightCol>.set>#open_s2>button:hover, .RightCol>.set>#open_s3>button:hover{
+  border: 2px solid #555;
+}
+
+.RightCol>.set>#open_s1>button:active, .RightCol>.set>#open_s2>button:active, .RightCol>.set>#open_s3>button:active{
+  background-color: #999;
+  font-size: 15px;
+  border: none;
+  transition: 0.3s;
+}
+
+.RightCol>.set>.:active{
 background-color: #CCCCCC;
 font-size: 1.1em;
 color:#0078D7;
@@ -356,7 +399,7 @@ li:active{
   .RightCol{
     position: relative;
     width: 340px;
-    right: 200px;
+    left: 50px;
   }
 }
 
@@ -415,8 +458,8 @@ li:active{
   }
 
   .RightCol{
-    right: 245px;
-    width: 300px;
+    width: 100%;
+    left: 0px;
   }
 
 }
