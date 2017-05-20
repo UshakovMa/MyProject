@@ -298,11 +298,28 @@ li:active{
    }
 }
 
+@media (min-width: 768px) {
+  .menu{
+    display: inline-block !important;
+  }
+}
+
 @media (max-width: 767px) {
   .menu {
     width: 100%;
     height: auto;
+    display: none;
   }
+  header>button{
+    display: inline-block!important;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #0078D7;
+    background-color: #0078D7;
+    color: #fff;
+    font-size: 1.5em;
+  }
+
   .main>.LeftCol{
     width: 100%;
     text-align: center;
